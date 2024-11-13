@@ -61,7 +61,7 @@ beforeEach(() => {
     ],
     citizensNumber: 100000
   }
-})
+});
 
 test('city should contains 3 houses', () => {
   expect(city.houses.length).toBe(3);
