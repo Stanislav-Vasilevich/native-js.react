@@ -34,7 +34,6 @@ export type StudentType = {
 }
 
 let student: StudentType;
-
 let city: CityType;
 
 beforeEach(() => {
