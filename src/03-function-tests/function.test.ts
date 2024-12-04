@@ -1,6 +1,5 @@
 import {
-  addSkill,
-  changeBudget,
+  addSkill, changeBudget,
   changeStudentLive,
   makeStudentActive,
   repairHouse,
