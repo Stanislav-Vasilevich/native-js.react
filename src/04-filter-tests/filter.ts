@@ -1,28 +1,9 @@
-const ages = [18, 28, 22, 1, 108, 98, 14];
+import {CityType, GovernmentBuildingsType} from '../02-object-tests/object-types';
 
-export const predicate = (age: number) => {
-  return age > 90;
+export const demolishHousesOnTheStreet = (city: CityType, street: string) => {
+  city.houses = city.houses.filter(c => c.address.street.title !== street);
 }
 
-const oldAges = [100]; // > 90
-
-type CurseType = {
-  title: string
-  price: number
+export const getBuildingsWithStaffCountGreaterThen = (city: Array<GovernmentBuildingsType>, count: number) => {
+  return city.filter(c => c.staffCount > count);
 }
-
-const courses = [
-  {title: 'css', price: 100},
-  {title: 'js', price: 200},
-  {title: 'react', price: 150},
-];
-
-// < 160
-const cheapCourses = (course: CurseType) => {
-  return course.price < 160;
-}
-
-const chipCourse = [
-  {title: 'css', price: 100},
-  {title: 'react', price: 150},
-];
