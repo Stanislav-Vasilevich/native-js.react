@@ -7,3 +7,7 @@ export function hairdrasser(u: UserType, power: number) {
 export function moveUser(u: UserType, newAddress: string) {
   return {...u, address: {...u.address, title: newAddress}};
 }
+
+export type HasLaptopType = {
+
+}
