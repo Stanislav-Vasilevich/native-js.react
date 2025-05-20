@@ -6,34 +6,11 @@ import {
   toFireStaff,
   toHireStaff
 } from './function';
-import {CityType} from '../02-object/object-types';
+import { beforeEach, test, expect } from 'vitest'
+import type {City, Student} from './function-types.ts';
 
-type TechnologyType = {
-  id: number
-  title: string
-}
-
-type StudentsCityType = {
-  title: string
-  countryTitle: string
-}
-
-type AddressType = {
-  streetTitle: string
-  city: StudentsCityType
-}
-
-export type StudentType = {
-  id: number
-  name: string
-  age: number
-  isActive: boolean
-  address: AddressType
-  technologies: Array<TechnologyType>
-}
-
-let student: StudentType;
-let city: CityType;
+let student: Student;
+let city: City;
 
 beforeEach(() => {
   student = {

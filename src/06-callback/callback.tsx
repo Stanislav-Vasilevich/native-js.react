@@ -17,7 +17,7 @@ export type HouseType = {
 }
 
 export const createMessages = (houses: Array<HouseType>) => {
-  let callback = (h: HouseType) => `Hello guys from ${h.address.street.title}`
+  const callback = (h: HouseType) => `Hello guys from ${h.address.street.title}`
 
   return houses.map(callback)
 }

@@ -1,4 +1,5 @@
-import {addBooks, changeLaptop, changeTown, getHair, moveUser} from './10';
+import { beforeEach, expect, test } from 'vitest';
+import {addBooks, changeLaptop, changeTown, getHair, moveUser} from './immutability.ts';
 
 export type UserType = {
   name: string

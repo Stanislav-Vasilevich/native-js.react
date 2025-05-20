@@ -1,4 +1,4 @@
-import {UserType, UserWithBooksType, UserWithLaptopType} from './10.test';
+import {UserType, UserWithBooksType, UserWithLaptopType} from './immutability.test.ts';
 
 export function getHair(u: UserType, power: number) {
   return {...u, hair: u.hair / power};

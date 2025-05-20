@@ -1,3 +1,4 @@
+import { beforeEach, test, expect } from 'vitest';
 import {multiply, splitIntoWords, sum} from './hello';
 
 let a: number;

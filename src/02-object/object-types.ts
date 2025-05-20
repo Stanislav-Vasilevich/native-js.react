@@ -1,17 +1,17 @@
-type StreetType = {
+type Street = {
   title: string
 }
 
-type AddressType = {
+type Address = {
   number: number
-  street: StreetType
+  street: Street
 }
 
-export type HouseType = {
+export type House = {
   id?: number
   buildedAt: number
   repaired: boolean
-  address: AddressType
+  address: Address
 }
 
 type GovernmentBuildingsAddressTitleType = {
@@ -29,9 +29,9 @@ export type GovernmentBuildingsType = {
   address: GovernmentBuildingsAddressType
 }
 
-export type CityType = {
+export type City = {
   title: string
-  houses: Array<HouseType>
+  houses: House[]
   governmentBuildings: Array<GovernmentBuildingsType>
   citizensNumber: number
 }

@@ -1,4 +1,4 @@
-import {UserType} from './09_01.test';
+import {UserType} from './mutability.test.ts';
 
 export function increaseAge(user: UserType) {
   user.age++;

@@ -1,3 +1,5 @@
+import { beforeEach, test, expect } from "vitest"
+
 type StreetTitle = {
   title: string
 }
@@ -49,7 +51,7 @@ test('', () => {
   const [ls1, ls2] = props.lessons;
   const [, ll2] = props.lessons; // если не нужен первый элемент пропускаем
 
-  const [ld1, ...allLessons] = props.lessons;
+  const [, ...allLessons] = props.lessons;
 
   expect(l1.title).toBe('1');
   expect(l2.title).toBe('2');

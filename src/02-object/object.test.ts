@@ -1,6 +1,7 @@
-import {CityType} from './object-types';
+import { beforeEach, test, expect } from 'vitest';
+import type {City} from './object-types.ts';
 
-let city: CityType;
+let city: City;
 
 beforeEach(() => {
   city = {

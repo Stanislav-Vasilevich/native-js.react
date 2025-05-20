@@ -1,7 +1,8 @@
-import {CityType} from '../02-object/object-types';
+import { beforeEach, test, expect } from 'vitest';
 import {demolishHousesOnTheStreet, getBuildingsWithStaffCountGreaterThen} from './filter';
+import type {City} from './filter.types.ts';
 
-let city: CityType;
+let city: City;
 
 beforeEach(() => {
   city = {
@@ -75,10 +76,7 @@ test("Houses should be destroyed", () => {
 });
 
 test("buildings with correct staff count", () => {
-  let buildings =
-    getBuildingsWithStaffCountGreaterThen(
-      city.governmentBuildings,
-      500);
+  const buildings = getBuildingsWithStaffCountGreaterThen(city.governmentBuildings,500);
 
   expect(buildings.length).toBe(1);
   expect(buildings[0].type).toBe("FIRE-STATION");

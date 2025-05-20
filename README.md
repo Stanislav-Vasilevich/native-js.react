@@ -21,10 +21,13 @@
 
 **07 - Деструктурирующее присваивание** ***(src/07-destructuring)***
 
-**08 - Ассоциативный массив JavaScript** ***(src/08-destructuring)***
+**08 - Ассоциативный массив JavaScript** ***(src/08-associative-array)***
+ - написал функции по добавлению user в массив users, удалению user из массива users, изменению имени user в массиве users по id user
+ - написал в отдельном модуле типизацию для users и user
+ - написал тесты для проверки функций из первого пункта, обновляя в каждом тесте данные через beforeEach
 
-**09 - Reference type, mutability, мутации** ***(src/09-destructuring)***
+**09 - Reference type, mutability, мутации** ***(src/09-mutability)***
 
-**10 - immutability, имутабельность** ***(src/10-destructuring)***
+**10 - immutability, имутабельность** ***(src/10-immutability)***
 
-**11 - Promises** ***(src/11-destructuring)***
+**11 - Promises** ***()***

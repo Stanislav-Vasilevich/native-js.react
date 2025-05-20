@@ -1,4 +1,5 @@
-import {increaseAge} from './09_01';
+import { beforeEach, expect, test } from 'vitest';
+import {increaseAge} from './mutability.ts';
 
 export type UserType = {
   name: string
