@@ -25,7 +25,7 @@ export const createMessages = (houses: Array<HouseType>) => {
 const callback = () => console.log('callback')
 setTimeout(callback, 1000)
 
-export const user = () => {
+export const User = () => {
   const onNameChanged = () => {
     console.log('user should be saved')
   }

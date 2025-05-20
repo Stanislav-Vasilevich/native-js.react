@@ -15,14 +15,16 @@
 **05 - map** ***(src/05-destructuring)***
  - разбираюсь с деструктуризацией
 
-**06 - callback, onClick, onChange, onBlur** ***(src/05-destructuring)***
+**06 - callback, onClick, onChange, onBlur** ***(src/06-callback)***
+ - написал компоненту, которая содержит: кнопку и поля ввода текста
+ - повесил слушатели событий по клику и изменению полей ввода и далее передаю данные этих элементов через callback функции, которые в свою очередь вызывают объект события event и вывод в консоль текста
 
-**07 - Деструктурирующее присваивание** ***(src/05-destructuring)***
+**07 - Деструктурирующее присваивание** ***(src/07-destructuring)***
 
-**08 - Ассоциативный массив JavaScript** ***(src/05-destructuring)***
+**08 - Ассоциативный массив JavaScript** ***(src/08-destructuring)***
 
-**09 - Reference type, mutability, мутации** ***(src/05-destructuring)***
+**09 - Reference type, mutability, мутации** ***(src/09-destructuring)***
 
-**10 - immutability, имутабельность** ***(src/05-destructuring)***
+**10 - immutability, имутабельность** ***(src/10-destructuring)***
 
-**11 - Promises** ***(src/05-destructuring)***
+**11 - Promises** ***(src/11-destructuring)***
