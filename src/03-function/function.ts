@@ -1,5 +1,5 @@
 import {StudentType} from './function.test';
-import {CityType, GovernmentBuildingsType, HouseType} from '../02-object-tests/object-types';
+import {CityType, GovernmentBuildingsType, HouseType} from '../02-object/object-types';
 
 export const addSkill = (student: StudentType, title: string) => {
   student.technologies.push({id: new Date().getDate(), title});

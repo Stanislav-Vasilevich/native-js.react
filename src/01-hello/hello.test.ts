@@ -1,4 +1,4 @@
-import {multiply, splitIntoWords, sum} from './01';
+import {multiply, splitIntoWords, sum} from './hello';
 
 let a: number;
 let b: number;

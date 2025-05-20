@@ -1,4 +1,4 @@
-import {GovernmentBuildingsType, HouseType} from '../02-object-tests/object-types';
+import {GovernmentBuildingsType, HouseType} from '../02-object/object-types';
 
 export const getStreetsTitlesOfGovernmentBuildings = (array: Array<GovernmentBuildingsType>) => {
   return array.map(i => {

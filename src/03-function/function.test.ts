@@ -6,7 +6,7 @@ import {
   toFireStaff,
   toHireStaff
 } from './function';
-import {CityType} from '../02-object-tests/object-types';
+import {CityType} from '../02-object/object-types';
 
 type TechnologyType = {
   id: number
