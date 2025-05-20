@@ -1,3 +1,5 @@
+import type {ChangeEvent, MouseEvent} from 'react';
+
 type StreetType = {
   title: string
 }
@@ -20,16 +22,31 @@ export const createMessages = (houses: Array<HouseType>) => {
   return houses.map(callback)
 }
 
-const callback = () => alert('hey')
-
+const callback = () => console.log('callback')
 setTimeout(callback, 1000)
 
-const User = () => {
+export const user = () => {
+  const onNameChanged = () => {
+    console.log('user should be saved')
+  }
+
+  const focusLostHandler = () => {
+    console.log('user should be saved')
+  }
+
+  const onAgeChanged = (event: ChangeEvent<HTMLInputElement>) => {
+    console.log('age changed: ' + event?.currentTarget.value)
+  }
+
+  const deleteUser = (e: MouseEvent<HTMLButtonElement>) => {
+    console.log('user should be deleted: ', e.currentTarget as HTMLButtonElement)
+  }
+
   return (
     <div>
-      Stanislav
-      <button>delete</button>
-      <button>save</button>
+      <textarea onChange={onNameChanged} onBlur={focusLostHandler}>Stanislav</textarea>
+      <input type="text" onChange={onAgeChanged}/>
+      <button onClick={deleteUser}>delete</button>
     </div>
   )
 }
